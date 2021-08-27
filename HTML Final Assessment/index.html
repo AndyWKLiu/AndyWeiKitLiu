@@ -1,0 +1,74 @@
+<html>
+    <link rel="stylesheet" href="style.css">
+    <title>Andy WK's Website</title>
+    <head>
+        <h1 style= "text-align: center">
+            Jmazing Jamba Juice
+        </h1>
+        <p style= "text-align:center">
+            By
+            <a onclick="location.href='https://andywkliu.github.io/Boba/'" type="button">Andy WK</a>
+        </p>
+    </head>
+    <body>
+        <h2>
+            My Favorite Drinks
+        </h2>
+        <!--My reasons to get Jamba Juice-->
+        <div style= "text-align:center">
+            <p1>
+                Why You should get Jamba Juice?
+                <ol>
+                    <br>1.It's good</br>
+                    <br>2.Why Not</br>
+                    <br>3.You shoud</br>
+                </ol>
+            </p1>  
+        </div>
+        <!--My Favorite three drinks laid out-->
+        <div class="container" id="description">
+            <div class="row">
+                <div class="col-lg-4">
+                    <img src="bluesky.jpg" width="220" height="350" id="favorites">
+                    <div>Blue Sky</div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="redgummy.jpg" width="220" height="350" id="favorites">
+                    <div>Red Gummy</div>
+                </div>
+                <div class="col-lg-4">
+                    <img src="whitegummy.jpg" width="220" height="350" id="favorites">
+                    <div>White Gummy</div>
+                </div>
+            </div>
+            <div class="footer">
+                <form>
+                    <!--Names-->
+                    <br><label for="fname">Name:</label></br>
+                    <br><input type= "text" id="fname" name="fname" value=""></br>
+                    <br><label for="lname">Last name:</label></br>
+                    <br><input type="text" id="lname" name="lname" value=""></br>
+                    <!--Multiple Choice-->
+                    <p>What's your favorite drink out of the three drinks abve?</p>
+                    <br><label for="bluesky">BlueSky</label></br>
+                    <input type="radio" id="BlueSky" name="Drinks" value="drinks">
+                    <br><label for="redgummy">Red Gummy</label></br>
+                    <input type="radio" id="Redgummy" name="Drinks" value="drinks">
+                    <br><label for="whitegummy">White Gummy</label></br>
+                    <input type="radio" id="Whitegummy" name="Drinks" value="drinks">
+                    <!--Input your favorite drinks-->
+                    <br><label for="Question">What's your favorite Jamba Juice Drink</label></br>
+                    <br><input type= "text" id="Question" name="Question" value=""></br>
+                    <!--Input your Opinion-->
+                    <p>Do you like my website?</p>
+                    <select name="Opinion">
+                        <option value="Vary"></option>
+                        <option value="Good">Yes(Good Answer)</option>
+                        <option value="Bad">No(You suck)</option>
+                    </select>
+                    <!--Submit-->
+                    <br><input type="submit" value="Submit"></br>
+                </form>
+            </div>
+    </body>
+</html>
