@@ -1,0 +1,12 @@
+.header{
+    display: inline;
+}
+.Logo{
+    float: left;
+}
+.Title-1{
+    text-align:center;
+}
+.navbar{
+    float:right;
+}
