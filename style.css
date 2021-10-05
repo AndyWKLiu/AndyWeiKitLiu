@@ -1,0 +1,37 @@
+#top_header{
+    text-align: center;
+    top: 0;
+}
+#Logo{
+    display: inline;
+    text-align: left;
+    float: left;
+    
+}
+#Title{
+    display: inline-block;
+    text-align: center;
+    padding-left:250px;
+    
+}
+#nav{
+    display: inline; 
+    text-align: right;
+    float: right;
+    background-color: white;
+}
+#bottom_header{
+    text-align: center;
+    width: 400px;
+    height: 130px;
+    border: 1px dashed black;
+    position: absolute;
+    right:500px;
+    background-color: white;
+}
+#background{
+    background-image: url('boba&donuts.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
