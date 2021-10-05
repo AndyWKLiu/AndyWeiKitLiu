@@ -1,0 +1,21 @@
+#header{
+    text-align: center;
+    top: 0;
+}
+#Logo{
+    display: inline;
+    text-align: left;
+    float: left;
+    
+}
+#Title{
+    display: inline-block;
+    text-align: center;
+    
+    
+}
+#nav{
+    display: inline; 
+    text-align: right;
+    float: right;
+}
