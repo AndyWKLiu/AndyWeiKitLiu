@@ -1,0 +1,48 @@
+#top_header{
+    text-align: center;
+    top: 0;
+}
+#Logo{
+    display: inline;
+    text-align: left;
+    float: left;
+    
+}
+#Title{
+    display: inline-block;
+    text-align: center;
+    padding-left:250px;
+    
+}
+#nav{
+    display: inline; 
+    text-align: right;
+    float: right;
+    background-color: white;
+}
+#bottom_header{
+    text-align:center;
+    width: 400px;
+    height: 130px;
+    border: 1px dashed black;
+    background-color:gray;
+}
+#background{
+    background-image: url('boba&donuts.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+}
+#cup{
+    margin: auto;
+    width: 300px; 
+    height: 500px;
+    border: 1px solid black;
+}
+#boba{
+    margin-left: auto;
+    margin-right: auto;
+}
+#amount{
+    text-align:center;
+}
