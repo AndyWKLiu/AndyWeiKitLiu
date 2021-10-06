@@ -1,23 +1,46 @@
-<html> 
+<html>
     <head>
-        <title>
-            Boba Milestone
-        </title>
-        <link rel="stylesheet" href="style.css">
+        <title>Boba Milestone1</title>
+        <link rel = "stylesheet" href="style.css">
     </head>
-    <body>
-        <div id="header">
-            <p class="Logo">
+    <script>
+        function allowDrop(ev){
+            ev.preventDefault();
+        }
+        function drag(ev){
+            ev.dataTransfer.setData("text", ev.target.id);
+        }
+        function drop(ev){
+            ev.preventDefault();
+            var data = ev.dataTransfer.getData("text");
+            var Copy = document.getElementById(data).cloneNode(true);
+            ev.target.appendChild(Copy);
+        }
+    </script>
+    <body id="background">
+        <div id="top_header">
+            <p id="Logo">
                 Edwin
             </p>
-            <p class="Title-1">
+            <p id="Title">
                 Jonathan
             </p>
-            <p>
-                <ul id="navbar">
-                    <li><a onclick="location.href='index.html'" type="button">Interactive Page</a></li>
-                </ul>
+            <p id="nav"> 
+                <a href='index.html'>Interactive Page</a>
+                <a href='context.html'>Context Page</a>
+                <a href='results.html'>Results Page</a>
             </p>
-          </div>
+        </div>
+        <div id="bottom_header">
+            <p> 
+                Instructions: Drag an estimated amount of pearl you usually like to intake into the cup. Doing this will allow us to calculate the grams of sugar you intake from pearls alone. After you are done, click the submit button, which will direct you to the results page.
+            </p>
+        </div>
+        <div id="interactive_part">
+                <div id="cup" ondrop="drop(event)" ondragover="allowDrop(event)">
+                </div>
+                <img id="boba" src = "pearl.png" draggable="true" ondragstart="drag(event)" width="50" height="50">
+        </div>
+        <p id="amount">Sugar:</p>
     </body>
 </html>
