@@ -52,11 +52,21 @@
             </br>
             <img src = "results_3_image.jpg" width = 300 height = 246>
         </div>
+        <div id="results_4">
+            <h1>
+                <strong>Results 4(Secret Page)</strong>
+            </h1>
+            <p>You got this because you filled up the whole cup</p>
+            <br>
+            <strong>Edwin forced me to do this, shame on him.</strong>
+            </br>
+        </div>
         <script>
             var value = localStorage.getItem("myValue");
             var x = document.getElementById("results_1")
             var y = document.getElementById("results_2")
             var z = document.getElementById("results_3")
+            var edwin = documenty.getElementById("results_4")
             if(value < 28){
                 x.style.display = "block";
             } else{
@@ -71,6 +81,11 @@
                 z.style.display = "block";
             } else{
                 z.style.display = "none";
+            }
+            if(value == 600){
+                edwin.style.display = "block";
+            } else{
+                edwin.style.display = "none";
             }
         </script>
     </body>
