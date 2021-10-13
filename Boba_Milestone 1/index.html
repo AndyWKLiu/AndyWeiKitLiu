@@ -3,7 +3,7 @@
         <title>Boba Milestone1</title>
         <link rel = "stylesheet" href="style.css">
     </head>
-    <script type = "text/javascript">
+    <script>
         function allowDrop(ev){
             ev.preventDefault();
         }
@@ -20,9 +20,14 @@
             alert("Instructions: Drag an estimated amount of pearl you usually like to intake into the cup. Doing this will allow us to calculate the grams of sugar you intake from pearls alone. After you are done, click the submit button, which will direct you to the results page.");
         }
         var starter = 0;
-        function value(){
+        function update(){
             starter = starter + 7; 
             alert("Sugar: " + starter + "g");
+            window['starter'];
+        }
+        function submit(){
+            localStorage.setItem("myValue", starter);
+            window.location.href="results.html";
         }
     </script>
     <body id="background">
@@ -45,7 +50,12 @@
         <div id="interactive_part">
                 <div id="cup" ondrop="drop(event)" ondragover="allowDrop(event)">
                 </div>
-                <img id="boba" src = "pearl.png" draggable="true" ondragend="value()" ondragstart="drag(event)" width="50" height="50">
+                <img id="boba" src = "pearl.png" draggable="true" ondragend="update()" ondragstart="drag(event)" width="50" height="50">
         </div>  
+        <div id="submit">
+            <a href ="results.html">
+                <input type ="button" onclick ="submit()" value = "Submit">
+            </a>
+        </div>
     </body>
 </html>
